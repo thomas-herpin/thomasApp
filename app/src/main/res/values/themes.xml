@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
-<style name="Theme.AplikasiThomas" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
-    <item name="colorPrimary">#A1BA56</item>
-    <item name="colorPrimaryVariant">@color/purple_700</item>
-    <item name="colorOnPrimary">@color/black</item>
-    <item name="colorSecondary">@color/teal_200</item>
-    <item name="colorSecondaryVariant">@color/teal_200</item>
-    <item name="colorOnSecondary">@color/black</item>
-    <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
-</style>
+    <style name="Theme.PertamaApp" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">#041CD9</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">#E9DFC1</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+    </style>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.AplikasiThomas" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
 </resources>
