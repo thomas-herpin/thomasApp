@@ -64,7 +64,7 @@ public class dashboardActivity extends AppCompatActivity {
     }
 
     public void toProfil(){
-        Intent intent = new Intent(this,profilActivity.class);
+        Intent intent = new Intent(this, profilActivity.class);
         startActivity(intent);
     }
 

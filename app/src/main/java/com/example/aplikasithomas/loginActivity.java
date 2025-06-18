@@ -35,7 +35,14 @@ public class loginActivity extends AppCompatActivity {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                toDashboard();
+                String username = edtUsername.getText().toString();
+                String password = edtPassword.getText().toString();
+
+                if(isPasswordValid(password)){
+                    toDashboard();
+                }else {
+                    edtPassword.setError("Password harus minimal 8 karakter, ada huruf besar & karakter khusus");
+                }
             }
         });
     }
@@ -44,5 +51,26 @@ public class loginActivity extends AppCompatActivity {
         Intent intent = new Intent(this,dashboardActivity.class);
         intent.putExtra("username",edtUsername.getText().toString());
         startActivity(intent);
+    }
+
+    private boolean isPasswordValid(String password) {
+        if (password.length() < 8) {
+            return false;
+        }
+
+        boolean hasUppercase = false;
+        boolean hasSpecialChar = false;
+        String specialChars = "!@#$%^&*()_+=<>?{}[]~-";
+
+        for (char c : password.toCharArray()) {
+            if (Character.isUpperCase(c)) {
+                hasUppercase = true;
+            }
+            if (specialChars.contains(String.valueOf(c))) {
+                hasSpecialChar = true;
+            }
+        }
+
+        return hasUppercase && hasSpecialChar;
     }
 }

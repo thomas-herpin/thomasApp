@@ -126,6 +126,7 @@ public class profilActivity extends AppCompatActivity {
         edtStudentID.setText("");
         edtFakultas.setText("");
         rdgProdi.clearCheck();
+        edtPassword.setText("");
         cbxSyarat.setChecked(false);
     }
 
