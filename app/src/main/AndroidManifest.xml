@@ -17,9 +17,6 @@
             android:exported="false"
             android:theme="@style/Theme.AplikasiThomas" />
         <activity
-            android:name=".loginActivity1"
-            android:exported="false" />
-        <activity
             android:name=".dashboardActivity"
             android:exported="false" />
         <activity
