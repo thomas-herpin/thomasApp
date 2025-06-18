@@ -22,7 +22,7 @@
             android:id="@+id/txvWelcome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Selamat datang, Ade!"
+            android:text=""
             android:textColor="@color/black"
             android:textSize="8pt"
             android:textStyle="bold"
